@@ -1,0 +1,325 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+
+body {
+	margin: 0px;
+	font-family: 'segoe ui';
+	color: #000;
+}
+
+.nav {
+  height: 50px;
+  width: 100%;
+  background-color: #4d4d4d;
+  position: relative;
+}
+
+.nav > .nav-header {
+  display: inline;
+}
+
+.nav > .nav-header > .nav-title {
+  display: inline-block;
+  font-size: 22px;
+  color: #fff;
+  padding: 10px 10px 10px 10px;
+}
+
+.nav > .nav-btn {
+  display: none;
+}
+
+.nav > .nav-links {
+  display: inline;
+  float: right;
+  font-size: 18px;
+}
+
+.nav > .nav-links > a {
+  display: inline-block;
+  padding: 13px 10px 13px 10px;
+  text-decoration: none;
+  color: #efefef;
+}
+
+.nav > .nav-links > a:hover {
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.nav > #nav-check {
+  display: none;
+}
+
+@media (max-width:600px) {
+  .nav > .nav-btn {
+    display: inline-block;
+    position: absolute;
+    right: 0px;
+    top: 0px;
+  }
+  .nav > .nav-btn > label {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    padding: 13px;
+  }
+  .nav > .nav-btn > label:hover,.nav  #nav-check:checked ~ .nav-btn > label {
+    background-color: rgba(0, 0, 0, 0.3);
+  }
+  .nav > .nav-btn > label > span {
+    display: block;
+    width: 25px;
+    height: 10px;
+    border-top: 2px solid #eee;
+  }
+  .nav > .nav-links {
+    position: absolute;
+    display: block;
+    width: 100%;
+    background-color: #333;
+    height: 0px;
+    transition: all 0.3s ease-in;
+    overflow-y: hidden;
+    top: 50px;
+    left: 0px;
+  }
+  .nav > .nav-links > a {
+    display: block;
+    width: 100%;
+  }
+  .nav > #nav-check:not(:checked) ~ .nav-links {
+    height: 0px;
+  }
+  .nav > #nav-check:checked ~ .nav-links {
+    height: calc(100vh - 50px);
+    overflow-y: auto;
+  }
+}
+
+p {
+	position: relative;
+	text-transform: uppercase;
+	font-size: 3em;
+	letter-spacing: 5px;
+	overflow: hidden;
+	background: linear-gradient(90deg, #000, #fff, #000);
+	background-repeat: no-repeat;
+	background-size: 80%;
+	animation: animate 3s linear infinite;
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: rgba(255, 255, 255, 0);
+	text-align: center;
+	font-family: "segoe ui";
+	color: #FFF;
+}
+
+@keyframes animate {
+  0% {
+    background-position: -500%;
+  }
+  100% {
+    background-position: 500%;
+  }
+}
+strong {
+	text-align: center;
+}
+h1 {
+	text-align: center;
+}
+h1 {
+	color: #000;
+}
+body h1 {
+	color: #000;
+}
+
+.vmware h1 {
+	text-align: center;
+	color: #000;
+}
+.vmware h5 {
+	text-align: center;
+}
+.vmware h3 {
+	font-weight: bold;
+	text-align: center;
+}
+.responsive {
+  width: 100%;
+  max-width: 800px;
+  height: auto;
+}
+.responsive1 {
+  width: 80%;
+  max-width: 600px;
+  height: auto;
+  text-align: center;
+}
+
+.responsive2 {
+  width: 100%;
+  height: auto;
+}
+.box-area{
+	position: absolute;
+	top: auto;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+}
+.box-area li{
+	position: absolute;
+	display: block;
+	list-style: none;
+	width: 25px;
+	height: 25px;
+	background: #666;
+	animation: animated 20s linear infinite;
+	bottom: -15px;
+}
+.box-area li:nth-child(1){
+	left: 86%;
+	width: 80px;
+	height: 80px;
+	animation-delay: 0s;
+}
+.box-area li:nth-child(2){
+	left: 12%;
+	width: 30px;
+	height: 30px;
+	animation-delay: 1.5s;
+	animation-duration: 13s;
+}
+.box-area li:nth-child(3){
+	left: 62%;
+	width: 50px;
+	height: 50px;
+	animation-delay: 2s;
+	animation-duration: 17s;
+}
+.box-area li:nth-child(4){
+	left: 42%;
+	width: 100px;
+	height: 100px;
+	animation-delay: 5s;
+}
+.box-area li:nth-child(5){
+	left: 92%;
+	width: 110px;
+	height: 110px;
+	animation-delay: 6s;
+	animation-duration: 17s;
+}
+.box-area li:nth-child(6){
+	left: 82%;
+	width: 60px;
+	height: 60px;
+	animation-delay: 1s;
+}
+.box-area li:nth-child(7){
+	left: 2%;
+	width: 40px;
+	height: 40px;
+	animation-delay: 3s;
+	animation-duration: 17s;
+}
+.box-area li:nth-child(8){
+	left: 22%;
+	width: 80px;
+	height: 80px;
+	animation-delay: 1s;
+}
+.box-area li:nth-child(9){
+	left: 32%;
+	width: 20px;
+	height: 20px;
+	animation-delay: 1s;
+	animation-duration: 17s;
+}
+@keyframes animated{
+	0%{
+		transform: translateX(0) rotate(0deg);
+		opacity: 1;
+	}
+	100%{
+		transform:translateY(-800px) rotate(360deg);
+		opacity: 0;
+	}
+}
+h5 {
+	text-align: center;
+
+}
+iframe {
+	text-align: center;
+}
+style {
+	text-align: center;
+
+}
+.videoWrapper {
+	position: relative;
+	padding-bottom: 56.25%; /* 16:9 */
+	padding-top: 25px;
+	height: 0;
+}
+.videoWrapper iframe {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+.column {
+  float: left;
+  width: 33.3%;
+  margin-bottom: 20px;
+  padding: 0 40px;
+}
+
+.card {
+  box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.2);
+  margin: 20px;
+}
+
+.about-section {
+  padding: 20px;
+  text-align: center;
+  background-color: #474e5d;
+  color: white;
+}
+
+.container {
+	padding: 0 16px;
+	text-align: left;
+}
+
+.container::after, .row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.title {
+  color: grey;
+}
+
+@media screen and (max-width: 650px) {
+  .column {
+    width: 100%;
+    display: block;
+  }
+}
+.row .column .card .container {
+	text-align: center;
+}
