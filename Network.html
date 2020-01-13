@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Kali Linux</title>
+  <link rel="stylesheet" href="./style.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" type="text/css" href="css/main.css">
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<div class="navbar" id= "nav">
+  <a href="index.html">Home</a>
+  <div class="dropdown">
+      <a class="drop" href="#Home">Basic Knowledge
+        <i class="fa fa-angle-double-down"></i>
+        <i class="fa fa-angle-double-up"></i>
+      </a>
+    <div class="drop-content">
+      <a href="crypto.html">Cryptography</a>
+      <a href="Network.html">Network Security</a>
+      <a href="Reverse.html">Reverse Engineering</a>
+    </div>
+  </div>
+  <div class="dropdown">
+      <a class="drop" href="#Home">Install
+        <i class="fa fa-angle-double-down"></i>
+        <i class="fa fa-angle-double-up"></i>
+      </a>
+    <div class="drop-content">
+      <a href="kali.html">Kali Linux</a>
+      <a href="vmware.html">VMware</a>
+    </div>
+  </div>
+  <a href="tutorial.html">Tutorial</a>
+  <a href="Creator.html">Creator</a>
+  <a href="javascript:void(0);" class="icon" onclick="displayMenu()"><i class="fa fa-bars"></i></a>
+</div>
+<script
+  src="https://code.jquery.com/jquery-3.3.1.js"
+  integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+  crossorigin="anonymous"></script>
+  <script type="text/javascript" src="js/main.js"></script>
+
+
+
+
+
+
+<!---->
+
+<table width="100%" height="184" border="0" align="center">
+  <tr>
+    <td bgcolor="#FFFFFF">
+    <!--vmware-->
+<div class="vmware">
+<h5>&nbsp;</h5>
+<div class="column-responsive" >
+  <div class="card">
+    <div class="container">
+      <h1 class="title">Network Security</h1>
+      <h2>&nbsp;  ระบบสารสนเทศประกอบด้วยองค์ประกอบหลักๆ 3 ประการคือ ระบบฮาร์ดแวร์ ระบบซอฟต์แวร์ ระบบเครือข่าย ซึ่งองค์ประกอบทั้งสามต้องทำงานสอดประสานร่วมกันเป็นอย่างดี การทำ งานตามที่ได้ ออกแบบไว้จึงจะมีประสิทธิภาพและประสิทธิผล เมื่อมองในมุมของการรักษาความปลอดภัยระบบสารสนเทศ จะเริ่มต้นจากการวิเคราะห์ช่องโหว่ขององค์ประกอบย่อยต่างๆ ทั้งหมด รวมถึงผู้ที่มีส่วนเกี่ยวข้องกับระบบ ซึ่ง สามารถทำได้โดยการหาข้อมูลองค์ประกอบทั้งหมดของระบบไม่ว่าจะเป็นองค์ประกอบในระบบฮาร์ดแวร์ ความสามารถและการทำงานของซอฟต์แวร์ โพรโตคอลที่ใช้รวมถึงกฎการใช้งานระบบเครือข่าย ความรู้ ความสามารถของผู้ที่มีส่วนเกี่ยวข้องในระบบ นอกจากนี้ยังต้องมีการวิเคราะห์ถึงการกฎระเบียบ และ กระบวนการทำงานของผู้ใช้งานในระบบสารสนเทศนั้นๆ ด้วย จึงจะสามารถวิเคราะห์ถึงปัญหาในการรักษา ความปลอดภัยในระบบสารสนเทศและแนวทางในการแก้ไขปัญหาต่อไป 
+        ในการทำงานของผู้ใช้งานระบบโดยทั่วไป สามารถวิเคราะห์ปัญหาด้านการรักษาความปลอดภัยระบบได้ในลักษณะเดียวกันกับการวิเคราะห์ระบบ แต่ผลลัพธ์ที่จะได้นั้นขึ้นอยู่กับความรู้ความสามารถของผู้วิเคราะห์ ว่ามีความรู้ในกระบวนการทำงานของฮาร์ดแวร์ ซอฟต์แวร์ และระบบเครือข่ายในระดับลึกมากน้อยเพียงใด ยกตัวอย่างเช่นกรณีที่ผู้ใช้งานเชื่อมต่อเข้าไปยังเว็บไซต์ของหน่วยงานเพื่ออ่าน E-mail ของบริษัทผ่านหน้าเว็บ เพจในร้านบริการให้เช่าอินเตอร์เน็ตหรืออินเตอร์เน็ตคาเฟ่ ซึ่งหลายๆ คนอาจเคยเจอปัญหาถูกขโมยรหัสผ่าน เมื่อใช้งานในอินเตอร์เน็ตคาเฟ่มาแล้ว ในการวิเคราะห์ปัญหาดังกล่าวจะทำได้โดยการแยกแยะในเบื้องต้นว่า ระบบที่ใช้มีองค์ประกอบย่อยและการทำงานอะไรบ้าง แล้วพิจารณาว่าองค์ประกอบหรือการทำงานเหล่านั้นทำ ให้เกิดปัญหาอะไรขึ้นได้บ้าง
+        </h2>
+      <h2>โพรโตคอลทีซีพีเป็นโพรโตคอลที่มีการใช้งานสูงมากเพราะเป็นโพรโตคอลที่มีความสามารถในการ รับประกันการส่งข้อมูล(Guarantee Delivery) โดยสามารถตรวจสอบความผิดปกติของข้อมูลที่ส่งและส่งช้า เมื่อพบความผิดปกติสามารถรับรองความครบถ้วนของข้อมูลที่ส่ง เช่น หากส่งข้อมูลเป็นไฟล์ขนาด 10 กิโลไบต์โพรโตคอลทีซีพีจะแบ่งข้อมูลออกเป็นส่วน ๆ เรียกว่า เซ็กเมนต์(Segment) เช่นหากกำหนดให้ขนาด ของเซ็กเมนต์เป็น 1 กิโลไบต์ก็จะต้องส่งทั้งหมด 10 ครั้ง ในการส่ง10 ครั้งนี้หากมีความผิดพลาดเกิดขึ้นที่เซ็กเมนต์ใด ก็จะส่งเซ็กเมนต์นั้น ใหม่และหากไม่สามารถส่งให้ครบได้ก็จะแจ้งความผิดพลาด โดยจะไม่มีกรณีที่รับข้อมูลได้ไม่ครบถ้วนอย่างเด็ดขาด</h2>
+
+    </div>
+  </div>
+</div>
+<div class="column-responsive">
+  <div class="card">
+    <div class="container">
+      <h1><img src="pic/TCP.png" alt="Nature" class="responsive" style="width:100%"></h1>
+      <h1 class="title">TCP Model</h1>
+    </div>
+  </div>
+</div>
+
+
+<script  src="./script.js"></script>
+</body>
+</html>
